@@ -1,2 +1,3 @@
 # never-have-i-ever-flask
-Flask app for never have I ever game
+Flask app for corporate fun friday event :
+Host Never Have I Ever game in your corporate
