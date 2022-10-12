@@ -12,13 +12,13 @@ Player = ["Palak","Raja","Bhashkar","Pronoy","Bharat","Nimma","Fahima","Amrita",
 def question():# df):
     choose = random.choice(Qs)
     Qs.remove(choose)
-    return '<br><br><br><br><br><br><br><br><br><br><br><center><h1>{}</h1></center>'.format(random.choice(Qs))
+    return '<br><br><br><br><br><br><br><br><br><br><br><center><h1>{}</h1></center>'.format(choose)
 
 @app.route("/player")
 def player():# df):
     player_name = random.choice(Player)
     Player.remove(player_name)
-    return '<br><br><br><br><br><br><br><br><br><br><br><center><h1>{}</h1></center>'.format(random.choice(Player))
+    return '<br><br><br><br><br><br><br><br><br><br><br><center><h1>{}</h1></center>'.format(player_name)
     
 @app.route("/both")
 def app_name():# df):
@@ -26,7 +26,7 @@ def app_name():# df):
     Qs.remove(choose)
     player_name = random.choice(Player)
     Player.remove(player_name)
-    return '<br><br><br><br><br><br><center><h1>{}</h1></center><br><br><br><br><br><center><h1>{}</h1></center>'.format(random.choice(Qs),random.choice(Player))
+    return '<br><br><br><br><br><br><center><h1>{}</h1></center><br><br><br><br><br><center><h1>{}</h1></center>'.format(choose,player_name)
     
 @app.route("/special")
 def special():# df):
